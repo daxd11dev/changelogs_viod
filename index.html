@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelogs - Void</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #dddddd;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 380px;
+        }
+
+        h1 {
+            font-size: 22px; 
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+            margin: 0 0 8px 0;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .log-section {
+            margin-bottom: 8px;
+        }
+
+        .version-title {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 1px;
+            color: #ffffff;
+        }
+
+        .log-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .log-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0px;
+            font-size: 10px;
+            line-height: 1.2;
+            color: #bbbbbb;
+        }
+
+        .log-item::before {
+            content: "•";
+            color: #ffffff;
+            font-weight: bold;
+            width: 0.8em;
+            margin-left: 2px;
+            flex-shrink: 0;
+        }
+
+        .code-text {
+            font-family: monospace;
+            background-color: #222;
+            padding: 0px 1px;
+            font-size: 9px;
+            color: #8ab4f8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Changelogs</h1>
+
+        <div class="log-section">
+            <div class="version-title">v4.5 Beta</div>
+            <ul class="log-list">
+                <li class="log-item">Release beta</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v4.4.2</div>
+            <ul class="log-list">
+                <li class="log-item">Fix little bugs and ready to release</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v4.4</div>
+            <ul class="log-list">
+                <li class="log-item">Released in beta testing phase</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v4.0</div>
+            <ul class="log-list">
+                <li class="log-item">Minor fixes</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v3.8</div>
+            <ul class="log-list">
+                <li class="log-item">Minor fixes</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v3.6</div>
+            <ul class="log-list">
+                <li class="log-item">Fixed charging issues</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v3.5</div>
+            <ul class="log-list">
+                <li class="log-item">Minor fixes</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v3.3</div>
+            <ul class="log-list">
+                <li class="log-item">Minor fixes</li>
+                <li class="log-item">Testing phase opened</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v2.6</div>
+            <ul class="log-list">
+                <li class="log-item">Fixed random reboots</li>
+                <li class="log-item">Fixed 4G network on several devices</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v2.3 — Universal Coverage (Early Access)</div>
+            <ul class="log-list">
+                <li class="log-item">Support vendor bin for Qualcomm, MTK, Samsung, and MIUI</li>
+                <li class="log-item">Added stub library & dummy thermal config</li>
+                <li class="log-item">API level check for Android 10+ and 12+</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v2.2 — Service Killer + Performance</div>
+            <ul class="log-list">
+                <li class="log-item">Stop 29+ thermal services at runtime</li>
+                <li class="log-item">Push CPU & GPU to performance mode</li>
+                <li class="log-item">Optimize I/O, memory, and network</li>
+                <li class="log-item">Stop 40+ MIUI daemons & force-stop apps</li>
+                <li class="log-item">Daemon loop every 60 seconds for re-apply</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v2.0 — Boot-Time Thermal Disabler</div>
+            <ul class="log-list">
+                <li class="log-item">Disable thermal zones from early boot</li>
+                <li class="log-item">Disable thermal services via <span class="code-text">system.prop</span></li>
+                <li class="log-item">Disable MIUI bloatware (joyose, msa, powerkeeper)</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v1.5 — Multi-Arch Support</div>
+            <ul class="log-list">
+                <li class="log-item">Automatic ARM32 / ARM64 detection & support</li>
+            </ul>
+        </div>
+
+        <div class="log-section">
+            <div class="version-title">v1.0 — Initial Build</div>
+            <ul class="log-list">
+                <li class="log-item">Basic module structure, compatible with Magisk & KSU</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
